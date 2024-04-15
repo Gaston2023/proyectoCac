@@ -1,0 +1,171 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- TIPOGRAFIA GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <title>Concesionaria de Autos</title>
+    <!-- CSS PERSONALIZADO -->
+    <link rel="stylesheet" href="/assets/styles.css">
+</head>
+
+<body>
+    <header>
+        <!-- BARRA DE NAVEGACION -->
+        <nav>
+            <ul>
+                <!-- SI FALTA ALGN LINK AGREGAR -->
+                <img src="https://w7.pngwing.com/pngs/40/772/png-transparent-car-dealership-alsa-enterprises-motors-used-car-vehicle-car-blue-text-hand.png"
+                    alt="Logo" class="logo">
+                <li><a href="/">Inicio</a></li>
+                <li><a href="/templates/registro.html">Registrarse</a></li>
+                <li><a href="/templates/login.html">Login</a></li>
+                <li><a href="/templates/catalogo.html">Catálogo</a></li>
+                <li><a href="/templates/contacto.html">Contacto</a></li>
+            </ul>
+            <div class="redes">
+                <a href="https://www.facebook.com/concesionaria"><img
+                        src="https://cdn-icons-png.flaticon.com/256/124/124010.png" alt="Facebook"></a>
+                <a href="https://www.twitter.com/concesionaria"><img
+                        src="https://cdn-icons-png.flaticon.com/512/124/124021.png" alt="Twitter"></a>
+                <a href="https://www.instagram.com/concecionaria"><img
+                        src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram"></a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="espaciado2"></div>
+        <h1 class="agregarCoche"> AGREGAR COCHE</h1>
+        <div class="espaciado3"></div>
+        <!-- HACER: CENTRAR EL FORMULARIO Y COLOCAR NOMBRE DEL AUTOR, DARLE ESTILOS -->
+        <section class="formAutos">
+            <form id="formulario">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="modelo">Modelo:</label>
+                <input type="text" id="modelo" name="modelo" required>
+                <label for="marca">Marca:</label>
+                <input type="text" id="marca" name="marca" required>
+                <label for="anio">Año:</label>
+                <input type="number" id="anio" name="anio" required>
+                <label for="color">Color:</label>
+                <input type="text" id="color" name="color" required>
+                <button type="submit">Agregar</button>
+            </form>
+        </section>
+        <div class="espaciado2"></div>
+        <div class="tabla" id="tabla">
+            <h1 class="tituloTabla"> TABLA DE CRUD </h1>
+            <div class="espaciado3"></div>
+            <table>
+                <!-- cabecera de la tabla -->
+                <thead>
+                    <tr>
+                        <th>NOMBRE</th>
+                        <th>MODELO</th>
+                        <th>MARCA</th>
+                        <th>AÑO</th>
+                        <th>COLOR</th>
+                        <th>ACCIONES</th>
+                    </tr>
+                </thead>
+                <!-- body de la tabla compesta por las filas -->
+                <tbody>
+                    <tr>
+                        <!-- cada td seria cada celda -->
+                        <td>Ford Fiesta</td>
+                        <td>2019</td>
+                        <td>Ford</td>
+                        <td>2019</td>
+                        <td>Azul</td>
+                        <td>
+                            <button class="editar">Editar</button>
+                            <button class="eliminar">X</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Chevrolet Cruze</td>
+                        <td>2020</td>
+                        <td>Chevrolet</td>
+                        <td>2020</td>
+                        <td>Rojo</td>
+                        <td>
+                            <button class="editar">Editar</button>
+                            <button class="eliminar">X</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Toyota Corolla</td>
+                        <td>2018</td>
+                        <td>Toyota</td>
+                        <td>2018</td>
+                        <td>Blanco</td>
+                        <td>
+                            <button class="editar">Editar</button>
+                            <button class="eliminar">X</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Honda Civic</td>
+                        <td>2017</td>
+                        <td>Honda</td>
+                        <td>2017</td>
+                        <td>Negro</td>
+                        <td>
+                            <button class="editar">Editar</button>
+                            <button class="eliminar">X</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Hyundai Elantra</td>
+                        <td>2021</td>
+                        <td>Hyundai</td>
+                        <td>2021</td>
+                        <td>Gris</td>
+                        <td>
+                            <button class="editar">Editar</button>
+                            <button class="eliminar">X</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+    </main>
+    <footer>
+        <!-- TALVEZ SE DEBERIA AGREGAR MAS INFO O MARKETING -->
+        <section class="infoMarketing">
+            <h3 class="espaciado3">SOMOS TOP UNO EN VENTAS</h3>
+            <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt consequuntur dolore molestiae quibusdam, vel culpa incidunt aperiam unde nam magni nulla dolorum soluta corporis! Mollitia, error. Quam quae amet quaerat!
+            Excepturi, natus. Accusantium fugit nemo quos illum ipsam impedit iure quis? Magnam illo ab, maiores accusamus rem laboriosam voluptates provident distinctio tempore iste et accusantium sed, omnis deleniti nam atque.
+            Natus, obcaecati! Delectus reprehenderit vitae labore fuga soluta ipsam qui recusandae praesentium. Eum autem expedita odio ab officiis, blanditiis consectetur dolor reprehenderit voluptate nostrum, iusto iste dolorem sapiente a ipsum?</span>
+            <img src="https://png.pngtree.com/png-clipart/20221008/original/pngtree-number-1-best-seller-award-badge-png-image_8666630.png"
+                width="300px" alt="topOne">
+            <h3 class="espaciado3">SOMOS TOP UNO EN VENTAS</h3>
+            <h3>
+                La concesionaria que redefine la excelencia. “Autos Prestigio” no es solo un destino, es la cumbre del
+                lujo automotriz. Con una selección inigualable de vehículos de alta gama y un servicio al cliente que
+                supera todas las expectativas, nos hemos ganado el título de la mejor concesionaria del mundo. Nuestro
+                compromiso con la calidad y la satisfacción del cliente es inquebrantable, y cada auto que vendemos es
+                una promesa de rendimiento, elegancia y confiabilidad. Descubre la perfección en cada detalle, desde la
+                primera bienvenida hasta el servicio posventa. En “Autos Prestigio”, no solo compras un auto; adquieres
+                una pieza de la excelencia automotriz.
+            </h3>
+        </section>
+    </footer>
+    <!-- FUNCIONES JS -->
+    <script src="/funcionesJS/crud.js"></script>
+    <!-- IMPLEMENTACION DE sweetalert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+
+</html>

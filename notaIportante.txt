@@ -1,0 +1,14 @@
+NOTA: una vez que suban sus archivos verificar links en la barra navegacion
+
+organizacion:
+carpeta assets:
+--el archivo css unificado
+carpeta funciones:
+--archivos javascript. uno por docmento o pagina
+
+
+IMTEGRANTES: Colocar ss nombres
+-Trigo Monzón Camilo Gastón
+-
+-
+-

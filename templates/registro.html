@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- TIPOGRAFIA GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <title>Concesionaria de Autos</title>
+    <link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body>
+    <header>
+        <!-- BARRA DE NAVEGACION -->
+        <nav>
+            <ul>
+                <img src="https://w7.pngwing.com/pngs/40/772/png-transparent-car-dealership-alsa-enterprises-motors-used-car-vehicle-car-blue-text-hand.png" alt="Logo" class="logo">
+                <li><a href="/">Inicio</a></li>
+                <li><a href="/templates/registro.html">Registrarse</a></li>
+                <li><a href="/templates/login.html">Login</a></li>
+                <li><a href="/templates/catalogo.html">Catalogo</a></li>
+                <li><a href="/templates/contacto.html">Contacto</a></li>
+                <li><a href="/templates/crud.html">CRUD</a></li>
+            </ul>
+            <div class="redes">
+                <a href="https://www.facebook.com/concesionaria"><img src="https://cdn-icons-png.flaticon.com/256/124/124010.png" alt="Facebook"></a>
+                <a href="https://www.twitter.com/concesionaria"><img src="https://cdn-icons-png.flaticon.com/512/124/124021.png" alt="Twitter"></a>
+                <a href="https://www.instagram.com/concecionaria"><img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram"></a>
+            </div>
+        </nav>
+    </header>
+    <main class="registro">
+
+        <!-- FORMULARIO DE REGISTRO -->
+        <form class="form-reg" action="https://formspree.io/f/xzbnaeld" method="post" target="_blank">
+            <h2>Crea tu cuenta</h2>
+
+                <label for="nombre">Nombre/s: <sub>*</sub></label>
+                <input type="text" name="nombre" placeholder="ej. Juan" required>
+
+                <label for="apellido">Apellido/s: <sub>*</sub></label>
+                <input type="text" name="apellido" placeholder="ej. Perez" required>
+
+                <label for="email">Email: <sub>*</sub></label>
+                <input type="email" name="email" placeholder="nombre@mail.com" required>
+
+                <label for="password">Contraseña: <sub>*</sub></label>
+                <input type="password" name="password" required>
+
+            <button type="submit">Registrarse</button>
+        </form>
+        
+    </main>
+    <footer>
+        <!-- TALVEZ SE DEBERIA AGREGAR MAS INFO O MARKETING -->
+        <section class="infoMarketing">
+            <h3 class="espaciado3">SOMOS TOP UNO EN VENTAS</h3>
+            <img src="https://png.pngtree.com/png-clipart/20221008/original/pngtree-number-1-best-seller-award-badge-png-image_8666630.png"
+            width="300px"
+            alt="topOne">
+                <h3 class="espaciado3">SOMOS TOP UNO EN VENTAS</h3>
+            <h3>
+                La concesionaria que redefine la excelencia. “Autos Prestigio” no es solo un destino, es la cumbre del lujo automotriz. Con una selección inigualable de vehículos de alta gama y un servicio al cliente que supera todas las expectativas, nos hemos ganado el título de la mejor concesionaria del mundo. Nuestro compromiso con la calidad y la satisfacción del cliente es inquebrantable, y cada auto que vendemos es una promesa de rendimiento, elegancia y confiabilidad. Descubre la perfección en cada detalle, desde la primera bienvenida hasta el servicio posventa. En “Autos Prestigio”, no solo compras un auto; adquieres una pieza de la excelencia automotriz.
+            </h3>
+        </section>
+    </footer>
+    <script src="/funcionesJS/"></script>
+</body>
+</html>
