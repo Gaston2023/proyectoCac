@@ -185,6 +185,10 @@ footer {
     align-items: center;
 }
 
+.infoMarketing img{
+    width: 300px;
+}
+
 /* PERSONALIZACION DE REDES SOCIALES */
 .redes {
     display: flex;
@@ -374,17 +378,18 @@ LO MEJOR ES PONER CLASES PROPIAS */
 
 /*CATALOGO*/
 
-/* .catalogo {
-
+.catalogo {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 }
 
-.detalles {
+/*.detalles {
 
 }
 
 .info {
     
-} */
+}*/
 
 
 /* ESTILOS LOGIN */
