@@ -197,7 +197,7 @@ footer {
     background: linear-gradient(to top, #317ef1 1%, #ffffff 100%);
     color: white;
     display: flex;
-    
+    width: 100%;
 
     padding: 10px;
     padding-top: 5%;
@@ -425,25 +425,89 @@ LO MEJOR ES PONER CLASES PROPIAS */
     width: 500px;
 } */
 
+/* ESTILOS DE FORMULARIO DE CONTACTO */
+fieldset {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 50PX auto;
 
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 
-/*.detalles {
+    align-items: center;
+    justify-content: center;
 
 }
 
-.info {
-    
-}*/
+.form-contacto{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    align-items: center;
+    justify-content: center;
+    max-width: 200px;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+label {
+    display: flex;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
 
 
 /* ESTILOS LOGIN */
+.loginForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px auto;
 
+}
+
+.styloFieltset{
+    border-radius: 10px;
+    border-color: #317ef1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding-bottom: 50px;
+}
 /* FALTA ESTILIZAR EL FORMLARIO DE AGREGAR COCHES EN CRuD*/
 .novedades, .agregarCoche {
     text-align: center;
 }
 .formAutos{
-    
     display: flex;
     justify-content: center;
 }
