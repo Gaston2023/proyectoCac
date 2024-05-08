@@ -1,0 +1,20 @@
+const nombre = document.getElementById("nombre");
+const email = document.getElementById("email");
+const mensaje = document.getElementById("mensaje");
+
+const form = document.getElementById("contactForm");
+
+var regexNombre = /^[A-Za-z]+$/;
+var regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/;
+
+form.addEventListener("submit", e=>{
+    e.preventDefault();
+
+    if(nombre.value.length == 0 || !nombre.value.match(regexNombre)){
+        alert("Ingrese un nombre.");
+    }
+
+    if(!regexEmail.test(email.value)){
+        alert("Ingrese un email valido.");
+    }
+})
