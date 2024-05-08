@@ -10,11 +10,25 @@ var regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/;
 form.addEventListener("submit", e=>{
     e.preventDefault();
 
+    let msjal = false;
+    let alerta = "";
+
     if(nombre.value.length == 0 || !nombre.value.match(regexNombre)){
-        alert("Ingrese un nombre.");
+        alerta += "Ingrese un nombre.\n";
+        msjal = true;
     }
 
     if(!regexEmail.test(email.value)){
-        alert("Ingrese un email valido.");
+        alerta += "Ingrese un email valido.\n";
+        msjal = true;
+    }
+
+    if(mensaje.value.length == 0){
+        alerta += "Ingrese su consulta.\n";
+        msjal = true;
+    }
+
+    if(msjal){
+        alert(alerta);
     }
 })
