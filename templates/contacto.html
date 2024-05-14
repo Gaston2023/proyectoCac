@@ -43,11 +43,22 @@
         
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" >
-        
+
+                
+
                 <label for="mensaje">Mensaje:</label>
                 <textarea id="mensaje" name="mensaje" rows="4" ></textarea>
-                <input type="checkbox" name="username">
-        
+
+                <div class="selector">
+                    <label for="consulta">Tipo de consulta: </label>
+                <select name="consulta" id="consulta">
+                    <option value="consulta">Consulta</option>
+                    <option value="reclamo">Reclamo</option>
+                    <option value="financiamiento">Financiamiento</option>
+                    <option value="otros">Otros</option>
+                </select>
+                </div>
+
                 <button type="submit" class="botonEnviar" aria-label="Enviar formulario de contacto">Enviar</button>
             </form>
         </fieldset>

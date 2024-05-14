@@ -410,19 +410,6 @@ LO MEJOR ES PONER CLASES PROPIAS */
     justify-content: center;
 }
 
-/* .catalogo {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-    width: 90%;
-    margin: 50px auto;
-}
-
-
-.catalogo ::content {
-    display: flex;
-    margin: 100px;
-    width: 500px;
-} */
 
 /* ESTILOS DE FORMULARIO DE CONTACTO */
 fieldset {
@@ -466,6 +453,22 @@ input[type="text"],
 input[type="email"],
 textarea {
     width: 500px;
+    padding: 10px;
+    border: 3px solid #ccc;
+    border-radius: 5px;
+    margin: 25px auto;
+}
+
+.selector{
+    width: 500px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+select{
+    width: 400px;
     padding: 10px;
     border: 3px solid #ccc;
     border-radius: 5px;
