@@ -34,7 +34,7 @@
         </nav>
     </header>
     <main>
-        <fieldset><!--este formulario no parece umplir las condiciones de aprobacion, vere si puedo mejorarlo-->
+        <fieldset>
             <legend>Contacto</legend>
         
             <form class="form-contacto" id="contactForm">
@@ -51,14 +51,19 @@
 
                 <div class="selector">
                     <label for="consulta">Tipo de consulta: </label>
-                <select name="consulta" id="consulta">
-                    <option value="consulta">Consulta</option>
-                    <option value="reclamo">Reclamo</option>
-                    <option value="financiamiento">Financiamiento</option>
-                    <option value="otros">Otros</option>
-                </select>
-                </div>
+                    <select name="consulta" id="consulta">
+                        <option value="consulta">Consulta</option>
+                        <option value="reclamo">Reclamo</option>
+                        <option value="financiamiento">Financiamiento</option>
+                        <option value="otros">Otros</option>
+                    </select>
 
+                    <div class="archivos" id="archivos">
+                        <label for="adjunto">Adjunte archivos si asi lo requiere:</label>
+                        <input type="file" name="adjunto" id="adjunto">
+                    </div>
+                </div>
+                
                 <button type="submit" class="botonEnviar" aria-label="Enviar formulario de contacto">Enviar</button>
             </form>
         </fieldset>
@@ -77,6 +82,6 @@
             </h3>
         </section>
     </footer>
-    <script src="funcionesJS/contacto.js" defer></script>
+    <script src="../funcionesJS/contacto.js" defer></script>
 </body>
 </html>

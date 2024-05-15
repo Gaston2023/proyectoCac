@@ -1,6 +1,8 @@
 const nombre = document.getElementById("nombre");
 const email = document.getElementById("email");
 const mensaje = document.getElementById("mensaje");
+const tipoConsulta = document.getElementById("consulta");
+const adjunto = document.getElementById("archivos");
 
 const form = document.getElementById("contactForm");
 
@@ -30,5 +32,14 @@ form.addEventListener("submit", e=>{
 
     if(msjal){
         alert(alerta);
+    }
+})
+
+tipoConsulta.addEventListener("change", e=>{
+    if(tipoConsulta.value == "reclamo"){
+        adjunto.style.display = "block";
+    }
+    else{
+        adjunto.style.display = "none";
     }
 })
