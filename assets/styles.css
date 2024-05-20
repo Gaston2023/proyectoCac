@@ -46,6 +46,7 @@ nav ul li {
 }
 
 nav ul li a {
+    transition-duration: 0.1s;
     text-decoration: none;
     color: white;
     font-weight: bold;
