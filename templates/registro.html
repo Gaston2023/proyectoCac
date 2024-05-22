@@ -16,8 +16,13 @@
 <body>
     <header>
         <!-- BARRA DE NAVEGACION -->
-        <nav>
-            <ul>
+        <nav class="navbar">
+            <div class="hamburger" onclick="toggleMenu()">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu">
                 <img src="../assets/img/sedan.png" alt="Logo" class="logo">
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="login.html">Login</a></li>
@@ -25,11 +30,7 @@
                 <li><a href="contacto.html">Contacto</a></li>
                 <li><a href="crud.html">CRUD</a></li>
             </ul>
-            <div class="redes">
-                <a href="https://www.facebook.com/concesionaria"><img src="https://cdn-icons-png.flaticon.com/256/124/124010.png" alt="Facebook"></a>
-                <a href="https://www.twitter.com/concesionaria"><img src="https://cdn-icons-png.flaticon.com/512/124/124021.png" alt="Twitter"></a>
-                <a href="https://www.instagram.com/concecionaria"><img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram"></a>
-            </div>
+            
         </nav>
     </header>
     <main class="registro">
@@ -57,6 +58,11 @@
     <footer>
         <!-- TALVEZ SE DEBERIA AGREGAR MAS INFO O MARKETING -->
         <section class="infoMarketing">
+            <div class="redes">
+                <a href="https://www.facebook.com/concesionaria"><img src="https://cdn-icons-png.flaticon.com/256/124/124010.png" alt="Facebook"></a>
+                <a href="https://www.twitter.com/concesionaria"><img src="https://cdn-icons-png.flaticon.com/512/124/124021.png" alt="Twitter"></a>
+                <a href="https://www.instagram.com/concecionaria"><img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram"></a>
+            </div>
             <h3 class="espaciado3">SOMOS TOP UNO EN VENTAS</h3>
             <img src="https://png.pngtree.com/png-clipart/20221008/original/pngtree-number-1-best-seller-award-badge-png-image_8666630.png"
             width="300px"

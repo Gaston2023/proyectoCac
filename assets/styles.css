@@ -446,14 +446,15 @@ LO MEJOR ES PONER CLASES PROPIAS */
 }
 
 .form-reg {
-    margin-top: 25px;
+    
+    margin: 25px auto;
     border: 1px solid #ccc;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     padding: 2rem 6rem;
     gap: 0.5rem;
-    width: 300px;
+    
     max-width: 95%;
     box-shadow: 5px 5px 5px gray;
 }
@@ -475,7 +476,7 @@ LO MEJOR ES PONER CLASES PROPIAS */
 }
 
 .form-reg input {
-    width: 300px;
+    width: 100%;
     height: 30px;
     font-size: 16px;
     padding: 0 10px;
@@ -525,7 +526,7 @@ fieldset {
     align-items: center;
     justify-content: center;
 
-    width: 40%;
+    width: 80%;
 
 }
 
@@ -536,7 +537,7 @@ fieldset {
 
     align-items: center;
     justify-content: center;
-    max-width: 300px;
+    width: 300px;
 }
 
 legend {
@@ -553,16 +554,17 @@ label {
 input[type="text"],
 input[type="email"],
 textarea {
-    width: 300px;
+    width: 100%;
     padding: 10px;
     border: 3px solid #ccc;
     border-radius: 5px;
-    margin: 25px auto;
+    margin: 5px auto;
 }
 
 textarea {
-    resize: none;
+    
     height: 100px;
+    width: 300px;
 
 }
 

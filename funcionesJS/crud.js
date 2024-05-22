@@ -93,3 +93,14 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+
+// pal menu tipo hamburguesa
+function toggleMenu() {
+    var menu = document.querySelector('.nav-menu');
+    var hamburger = document.querySelector('.hamburger');
+
+
+    menu.classList.toggle('active');
+    hamburger.classList.toggle('change');
+}
