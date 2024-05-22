@@ -1,42 +1,45 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<!-- TIPOGRAFIA GOOGLE FONTS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+		rel="stylesheet">
 	<link rel="shortcut icon" href="../assets/img/sedan.png" type="image/x-icon">
 
 
 	<title>Concesionaria de Autos</title>
 	<link rel="stylesheet" href="../assets/styles.css">
 </head>
+
 <body>
 	<header>
 		<!-- BARRA DE NAVEGACION -->
-        <nav class="nav-reg">
-			<div></div>
+		<nav class="navbar">
+			<div class="hamburger" onclick="toggleMenu()">
+				<span class="bar"></span>
+				<span class="bar"></span>
+				<span class="bar"></span>
+			</div>
 
-        	<ul>
-                <img src="../assets/img/sedan.png" alt="Logo" class="logo">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="registro.html">Registrarse</a></li>
-                <li><a href="login.html">Login</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="crud.html">CRUD</a></li>
-            </ul>
-            <div class="redes">
-                <a href="https://www.facebook.com/concesionaria"><img src="https://cdn-icons-png.flaticon.com/256/124/124010.png" alt="Facebook"></a>
-                <a href="https://www.twitter.com/concesionaria"><img src="https://cdn-icons-png.flaticon.com/512/124/124021.png" alt="Twitter"></a>
-                <a href="https://www.instagram.com/concecionaria"><img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram"></a>
-            </div>
-        </nav>
-    </header>
+			<ul class="nav-menu">
+				<img src="../assets/img/sedan.png" alt="Logo" class="logo">
+				<li><a href="../index.html">Inicio</a></li>
+				<li><a href="registro.html">Registrarse</a></li>
+				<li><a href="login.html">Login</a></li>
+				<li><a href="contacto.html">Contacto</a></li>
+				<li><a href="crud.html">CRUD</a></li>
+			</ul>
+
+		</nav>
+	</header>
 	<main>
-		
+
 		<h1 class="tituloCatalogo">vea nuestras ultimas ofertas</h1>
 		<section class="contenedorNoticias">
 			<div class="card">
@@ -44,7 +47,8 @@
 				<h3>$30.000.000</h3>
 			</div>
 			<div class="card">
-				<img src="https://media.lacapital.com.ar/p/32884b246b9753daf4922144ddc218dc/adjuntos/203/imagenes/100/079/0100079307/1200x675/smart/imagefiatjpg.jpg" alt="">
+				<img src="https://media.lacapital.com.ar/p/32884b246b9753daf4922144ddc218dc/adjuntos/203/imagenes/100/079/0100079307/1200x675/smart/imagefiatjpg.jpg"
+					alt="">
 				<h3>$60.000.000</h3>
 			</div>
 			<div class="card">
@@ -52,7 +56,8 @@
 				<h3>$50.000.000</h3>
 			</div>
 			<div class="card">
-				<img src="https://cdn.motor1.com/images/mgl/l913J/s1/4x3/en-el-garage-de-autoblog-chevrolet-onix-ltz.webp" alt="">
+				<img src="https://cdn.motor1.com/images/mgl/l913J/s1/4x3/en-el-garage-de-autoblog-chevrolet-onix-ltz.webp"
+					alt="">
 				<h3>$65.000.000</h3>
 			</div>
 			<div class="card">
@@ -60,11 +65,13 @@
 				<h3>$70.000.000</h3>
 			</div>
 			<div class="card">
-				<img src="https://resizer.iproimg.com/unsafe/1280x/filters:format(webp)/https://assets.iprofesional.com/assets/jpg/2023/11/562175.jpg" alt="">
+				<img src="https://resizer.iproimg.com/unsafe/1280x/filters:format(webp)/https://assets.iprofesional.com/assets/jpg/2023/11/562175.jpg"
+					alt="">
 				<h3>$75.000.000</h3>
 			</div>
 			<div class="card">
-				<img src="https://tn.com.ar/resizer/R3Yzxcm1zP_gMxzlFauP5yCM7iI=/arc-anglerfish-arc2-prod-artear/public/JR6URCAPCNEUZPVTUTCCBMM7YQ.jpg" alt="">
+				<img src="https://tn.com.ar/resizer/R3Yzxcm1zP_gMxzlFauP5yCM7iI=/arc-anglerfish-arc2-prod-artear/public/JR6URCAPCNEUZPVTUTCCBMM7YQ.jpg"
+					alt="">
 				<h3>$60.000.000</h3>
 			</div>
 			<div class="card">
@@ -80,22 +87,50 @@
 				<h3>$120.000.000</h3>
 			</div>
 		</section>
-		<section class="detalles"><!--en las cards agregar un hijo anchor que tenga a toda la info y muestre los detalles al interactuar-->
+		<section class="detalles">
+			<!--en las cards agregar un hijo anchor que tenga a toda la info y muestre los detalles al interactuar-->
 			<img src="" alt="">
 			<div class="info">
 			</div>
 		</section>
 	</main>
 	<footer>
-        <!-- TALVEZ SE DEBERIA AGREGAR MAS INFO O MARKETING -->
-        <section class="infoMarketing">
-            <h3 class="espaciado3">SOMOS TOP UNO EN VENTAS</h3>
-            <img src="https://png.pngtree.com/png-clipart/20221008/original/pngtree-number-1-best-seller-award-badge-png-image_8666630.png" alt="topOne">
-                <h3 class="espaciado3">SOMOS TOP UNO EN VENTAS</h3>
-            <h3>
-                La concesionaria que redefine la excelencia. “Autos Prestigio” no es solo un destino, es la cumbre del lujo automotriz. Con una selección inigualable de vehículos de alta gama y un servicio al cliente que supera todas las expectativas, nos hemos ganado el título de la mejor concesionaria del mundo. Nuestro compromiso con la calidad y la satisfacción del cliente es inquebrantable, y cada auto que vendemos es una promesa de rendimiento, elegancia y confiabilidad. Descubre la perfección en cada detalle, desde la primera bienvenida hasta el servicio posventa. En “Autos Prestigio”, no solo compras un auto; adquieres una pieza de la excelencia automotriz.
-            </h3>
-        </section>
-    </footer>
+		<!-- TALVEZ SE DEBERIA AGREGAR MAS INFO O MARKETING -->
+		<section class="infoMarketing">
+			<div class="redes">
+				<a href="https://www.facebook.com/concesionaria"><img
+						src="https://cdn-icons-png.flaticon.com/256/124/124010.png" alt="Facebook"></a>
+				<a href="https://www.twitter.com/concesionaria"><img
+						src="https://cdn-icons-png.flaticon.com/512/124/124021.png" alt="Twitter"></a>
+				<a href="https://www.instagram.com/concecionaria"><img
+						src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram"></a>
+			</div>
+			<h3 class="espaciado3">SOMOS TOP UNO EN VENTAS</h3>
+			<img src="https://png.pngtree.com/png-clipart/20221008/original/pngtree-number-1-best-seller-award-badge-png-image_8666630.png"
+				alt="topOne">
+			<h3 class="espaciado3">SOMOS TOP UNO EN VENTAS</h3>
+			<h3>
+				La concesionaria que redefine la excelencia. “Autos Prestigio” no es solo un destino, es la cumbre del
+				lujo automotriz. Con una selección inigualable de vehículos de alta gama y un servicio al cliente que
+				supera todas las expectativas, nos hemos ganado el título de la mejor concesionaria del mundo. Nuestro
+				compromiso con la calidad y la satisfacción del cliente es inquebrantable, y cada auto que vendemos es
+				una promesa de rendimiento, elegancia y confiabilidad. Descubre la perfección en cada detalle, desde la
+				primera bienvenida hasta el servicio posventa. En “Autos Prestigio”, no solo compras un auto; adquieres
+				una pieza de la excelencia automotriz.
+			</h3>
+		</section>
+	</footer>
+	<script>
+		// pal menu tipo hamburguesa
+		function toggleMenu() {
+			var menu = document.querySelector('.nav-menu');
+			var hamburger = document.querySelector('.hamburger');
+
+
+			menu.classList.toggle('active');
+			hamburger.classList.toggle('change');
+		}
+	</script>
 </body>
+
 </html>

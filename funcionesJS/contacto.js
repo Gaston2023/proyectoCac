@@ -9,37 +9,48 @@ const form = document.getElementById("contactForm");
 var regexNombre = /^[A-Za-z]+$/;
 var regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/;
 
-form.addEventListener("submit", e=>{
+form.addEventListener("submit", e => {
     e.preventDefault();
 
     let msjal = false;
     let alerta = "";
 
-    if(nombre.value.length == 0 || !nombre.value.match(regexNombre)){
+    if (nombre.value.length == 0 || !nombre.value.match(regexNombre)) {
         alerta += "Ingrese un nombre.\n";
         msjal = true;
     }
 
-    if(!regexEmail.test(email.value)){
+    if (!regexEmail.test(email.value)) {
         alerta += "Ingrese un email valido.\n";
         msjal = true;
     }
 
-    if(mensaje.value.length == 0){
+    if (mensaje.value.length == 0) {
         alerta += "Ingrese su consulta.\n";
         msjal = true;
     }
 
-    if(msjal){
+    if (msjal) {
         alert(alerta);
     }
 })
 
-tipoConsulta.addEventListener("change", e=>{
-    if(tipoConsulta.value == "reclamo"){
+tipoConsulta.addEventListener("change", e => {
+    if (tipoConsulta.value == "reclamo") {
         adjunto.style.display = "block";
     }
-    else{
+    else {
         adjunto.style.display = "none";
     }
 })
+
+
+// pal menu tipo hamburguesa
+function toggleMenu() {
+    var menu = document.querySelector('.nav-menu');
+    var hamburger = document.querySelector('.hamburger');
+
+
+    menu.classList.toggle('active');
+    hamburger.classList.toggle('change');
+}

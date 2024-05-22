@@ -8,11 +8,13 @@
     /* font-weight: <weight>; */
     font-style: normal;
 }
-h2,h3{
+
+h2,
+h3 {
     color: #565656;
 }
 
-h4{
+h4 {
     margin-top: 20px;
     margin-bottom: 20px;
     font-size: 3rem;
@@ -53,7 +55,114 @@ nav ul li a {
     font-size: 25px;
 }
 
-a:hover{
+/* posible menu hamburguesa */
+
+
+/* Estilos generales */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    margin-top: 0px;
+    
+}
+
+.logo {
+    max-width: 100px;
+    /* Ajusta esto según el tamaño de tu logo */
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu li a {
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: block;
+    z-index: 1001;
+}
+
+/* Estilos del menú hamburguesa */
+.hamburger {
+    margin-top: 50px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.hamburger .bar {
+    display: block;
+    width: 30px;
+    height: 5px;
+    margin: 5px auto;
+    background-color: #333;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+
+    nav ul,
+    nav {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 55px;
+    }
+
+    nav .redes {
+        margin-top: 25px;
+        margin-bottom: 70px;
+    }
+    
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        /* Ajusta esto según la altura de tu barra de navegación */
+        left: 0;
+        background-color: #317ef1;
+        color: black;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .logo{
+        display: flex;
+        flex-grow: initial;
+    }
+}
+
+@media (min-width: 769px) {
+    .hamburger {
+        display: none;
+        
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+a:hover {
     color: black;
     font-size: 35px;
 }
@@ -80,7 +189,7 @@ a:hover{
 }
 
 .videoPresentacion iframe {
-    
+
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -91,23 +200,7 @@ a:hover{
 }
 
 
-/* Estilos para la barra de navegación con mediaqueries pala responsividad */
 
-@media (max-width: 768px) {
-    nav ul,
-    nav {
-        flex-direction: column;
-        align-items: center;
-        margin-top: 55px;
-    }
-    nav .redes{
-        margin-top: 25px;
-        margin-bottom: 70px;
-    }
-    .logo{
-        position:static;
-    }
-}
 
 
 .slogan {
@@ -203,7 +296,8 @@ footer {
     padding-top: 5%;
     padding-bottom: 5%;
 }
-.infoMarketing{
+
+.infoMarketing {
     color: #565656;
 
     margin-left: 5%;
@@ -213,7 +307,7 @@ footer {
     align-items: center;
 }
 
-.infoMarketing img{
+.infoMarketing img {
     width: 300px;
 }
 
@@ -234,12 +328,12 @@ footer {
 
 /* ESPACIDADOS VERTICALES, NO ES OBLIGATORIO SU USO */
 
-.espaciado2{
+.espaciado2 {
     margin-top: 50px;
     margin-bottom: 50px;
 }
 
-.espaciado3{
+.espaciado3 {
     margin-top: 25px;
     margin-bottom: 25px;
 }
@@ -273,6 +367,7 @@ footer {
     flex-direction: column;
     align-items: center;
 }
+
 .tabla {
     width: 80%;
     overflow-x: auto;
@@ -284,7 +379,8 @@ footer {
     border-collapse: collapse;
 }
 
-.tabla th, .tabla td {
+.tabla th,
+.tabla td {
     padding: 0.5rem;
     border: 1px solid lightgray;
 }
@@ -300,7 +396,8 @@ table {
     border-collapse: collapse;
 }
 
-th, td {
+th,
+td {
     padding: 0.5rem;
     border: 1px solid #ccc;
 }
@@ -309,7 +406,8 @@ th {
     background-color: #f2f2f2;
 }
 
-.editar, .eliminar {
+.editar,
+.eliminar {
     color: white;
     padding: 0.5rem 1rem;
     border: none;
@@ -320,10 +418,11 @@ th {
     margin-right: auto;
 }
 
-.editar{
+.editar {
     background-color: green;
 }
-.eliminar{
+
+.eliminar {
     background-color: red;
 }
 
@@ -338,8 +437,8 @@ LO MEJOR ES PONER CLASES PROPIAS */
     border-radius: 50%;
 }
 
-.registro{
-    min-height: calc(90vh - 20.9vh);
+.registro {
+    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -354,28 +453,29 @@ LO MEJOR ES PONER CLASES PROPIAS */
     flex-direction: column;
     padding: 2rem 6rem;
     gap: 0.5rem;
-    width: 900px;
+    width: 300px;
     max-width: 95%;
     box-shadow: 5px 5px 5px gray;
 }
 
-.form-reg h2{
+.form-reg h2 {
     padding-bottom: 1rem;
     align-self: center;
     color: #317ef1;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.form-reg sub{
+.form-reg sub {
     color: #f13731;
     font-size: 28px;
 }
 
-.form-reg label{
+.form-reg label {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.form-reg input{
+.form-reg input {
+    width: 300px;
     height: 30px;
     font-size: 16px;
     padding: 0 10px;
@@ -384,11 +484,11 @@ LO MEJOR ES PONER CLASES PROPIAS */
     border-bottom: 1px solid gray;
 }
 
-.form-reg input:focus{
+.form-reg input:focus {
     outline: none;
 }
 
-.form-reg button{
+.form-reg button {
     border: none;
     border-radius: 5px;
     padding: 10px;
@@ -399,13 +499,13 @@ LO MEJOR ES PONER CLASES PROPIAS */
     box-shadow: 5px 5px 5px gray;
 }
 
-.form-reg button:hover{
+.form-reg button:hover {
     opacity: 0.9;
 }
 
 
 /*CATALOGO*/
-.tituloCatalogo{
+.tituloCatalogo {
     margin-top: 25px;
     display: flex;
     justify-content: center;
@@ -429,14 +529,14 @@ fieldset {
 
 }
 
-.form-contacto{
+.form-contacto {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 
     align-items: center;
     justify-content: center;
-    max-width: 400px;
+    max-width: 300px;
 }
 
 legend {
@@ -453,28 +553,28 @@ label {
 input[type="text"],
 input[type="email"],
 textarea {
-    width: 500px;
+    width: 300px;
     padding: 10px;
     border: 3px solid #ccc;
     border-radius: 5px;
     margin: 25px auto;
 }
 
-textarea{
+textarea {
     resize: none;
     height: 100px;
 
 }
 
-.selector{
-    width: 500px;
+.selector {
+    width: 300px;
     margin: 10px auto;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-select{
+select {
     width: 400px;
     padding: 10px;
     border: 3px solid #ccc;
@@ -483,7 +583,7 @@ select{
     background-color: white;
 }
 
-.archivos{
+.archivos {
     padding: 20px;
     display: none;
 }
@@ -503,7 +603,7 @@ button:hover {
 
 
 /* ESTILOS LOGIN */
-.loginForm{
+.loginForm {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -511,7 +611,7 @@ button:hover {
 
 }
 
-.styloFieltset{
+.styloFieltset {
     border-radius: 10px;
     border-color: #317ef1;
     display: flex;
@@ -520,14 +620,18 @@ button:hover {
 
     padding-bottom: 50px;
 }
+
 /* FALTA ESTILIZAR EL FORMLARIO DE AGREGAR COCHES EN CRuD*/
-.novedades, .agregarCoche {
+.novedades,
+.agregarCoche {
     text-align: center;
 }
-.formAutos{
+
+.formAutos {
     display: flex;
     justify-content: center;
 }
+
 .formAutos input {
     padding: 5px;
     border: #317ef1 2px solid;
