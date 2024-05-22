@@ -55,8 +55,7 @@ nav ul li a {
     font-size: 25px;
 }
 
-/* posible menu hamburguesa */
-
+/* menu hamburguesa */
 
 /* Estilos generales */
 .navbar {
@@ -70,7 +69,6 @@ nav ul li a {
 
 .logo {
     max-width: 100px;
-    /* Ajusta esto según el tamaño de tu logo */
 }
 
 .nav-menu {
@@ -124,7 +122,6 @@ nav ul li a {
         width: 100%;
         position: absolute;
         top: 60px;
-        /* Ajusta esto según la altura de tu barra de navegación */
         left: 0;
         background-color: #317ef1;
         color: black;
@@ -150,16 +147,6 @@ nav ul li a {
         
     }
 }
-
-
-
-
-
-
-
-
-
-
 
 
 a:hover {
@@ -326,7 +313,7 @@ footer {
     margin: 10px;
 }
 
-/* ESPACIDADOS VERTICALES, NO ES OBLIGATORIO SU USO */
+/* ESPACIDADOS VERTICALES */
 
 .espaciado2 {
     margin-top: 50px;
@@ -426,8 +413,6 @@ th {
     background-color: red;
 }
 
-/* PARA EL RESTO DE LA PERSONALIZACION O CUSTOM CSS SE PUEDE SEGUIR ACA ABAJO, PERO CUIDADO CON LOS ESTILOS DE LOS H1,H2,H3,P, ETC
-LO MEJOR ES PONER CLASES PROPIAS */
 
 /* FORMULARIO DE CONTACTO */
 
@@ -623,7 +608,7 @@ button:hover {
     padding-bottom: 50px;
 }
 
-/* FALTA ESTILIZAR EL FORMLARIO DE AGREGAR COCHES EN CRuD*/
+/* parte del CRUD*/
 .novedades,
 .agregarCoche {
     text-align: center;
